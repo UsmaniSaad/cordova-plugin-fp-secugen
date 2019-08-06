@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-fp-secugen",
+  "version": "0.1.13",
+  "description": "Cordova Secugen Finger Print Plugin",
+  "cordova": {
+    "id": "cordova-plugin-fp-secugen",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "Saad Usmani",
+  "license": "ISC"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-fp-secugen"
+        version="0.1.13">
+
+  <name>FP Secugen</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/fpindex.js" target="js/fpindex.js"/>
+
+  <js-module src="www/fpindex.js" name="fpindex">
+    <clobbers target="fpindex" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="FpSecugen">
+        <param name="android-package" value="sa.com.plugin.FPSecugen"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/FPSecugen.java" target-dir="src/sa/com/plugin/"/>
+    <source-file src="src/android/BiometricDevice.java" target-dir="src/sa/com/plugin/"/>
+    <source-file src="src/android/UsbBroadcastReceiver.java" target-dir="src/sa/com/plugin/"/>
+    <source-file src="src/android/Utils.java" target-dir="src/sa/com/plugin/"/>
+    <source-file src="src/android/ScanProperties.java" target-dir="src/sa/com/plugin/"/>
+    <source-file src="src/android/ImageData.java" target-dir="src/sa/com/plugin/"/>
+
+  </platform>
+
+</plugin>
