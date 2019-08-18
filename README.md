@@ -1,6 +1,6 @@
 # Cordova Secugen Finger Print Plugin Android
 
-##Simple cordova plugin that takes care of Secugen Native APIs for Android.
+## Simple cordova plugin that takes care of Secugen Native APIs for Android.
 
 ### Steps to add this plugin in your project.
 
